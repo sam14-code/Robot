@@ -56,20 +56,20 @@ namespace Robus
                 robot.Rotate(90);
                 this._instructionWriter.AddInstruction(RobotActionType.Rotate, new Rotate(90));
 
-                robot.Move(10, 1);
-                this._instructionWriter.AddInstruction(RobotActionType.Move, new Move(10, 1));
+                robot.Move(20, 2);
+                this._instructionWriter.AddInstruction(RobotActionType.Move, new Move(20, 2));
 
-                robot.Rotate(90);
-                this._instructionWriter.AddInstruction(RobotActionType.Rotate, new Rotate(90));
+                robot.Rotate(80);
+                this._instructionWriter.AddInstruction(RobotActionType.Rotate, new Rotate(80));
 
-                robot.Move(10, 1);
-                this._instructionWriter.AddInstruction(RobotActionType.Move, new Move(10, 1));
+                robot.Move(30, 3);
+                this._instructionWriter.AddInstruction(RobotActionType.Move, new Move(30, 3));
 
-                robot.Rotate(90);
-                this._instructionWriter.AddInstruction(RobotActionType.Rotate, new Rotate(90));
+                robot.Rotate(70);
+                this._instructionWriter.AddInstruction(RobotActionType.Rotate, new Rotate(70));
 
-                robot.Move(10, 1);
-                this._instructionWriter.AddInstruction(RobotActionType.Move, new Move(10, 1));
+                robot.Move(40, 4);
+                this._instructionWriter.AddInstruction(RobotActionType.Move, new Move(40, 4));
 
                 // Save all the instructions to file
                 this._instructionWriter.SaveAllInstructionsToFile();
