@@ -30,13 +30,13 @@ namespace Robot.Models
         /// <summary>
         /// Gets or sets the Distance
         /// </summary>
-        [JsonProperty("distance")]
+        [JsonProperty("Distance")]
         public int Distance { get; set; }
         
         /// <summary>
         /// Gets or sets the Point
         /// </summary>
-        [JsonProperty("point")]
+        [JsonProperty("Point")]
         public double Point { get; set; }
     }
 }

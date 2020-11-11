@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Robot.Converters;
 using Robot.Models;
 using System;
 using System.Collections.Generic;
@@ -56,7 +57,7 @@ namespace Robot.InstructionsReader
             using (var sr = new StreamReader(this.FileName))
             {
                 var json = sr.ReadToEnd();
-                var obj= JsonConvert.DeserializeObject<List<Instruction<T>>>(json);
+                this.Instructions = JsonConvert.DeserializeObject<List<Instruction<T>>>(json, new KnownTypeConverter());                
                 sr.Close();
             }
         }

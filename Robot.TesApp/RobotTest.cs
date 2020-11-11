@@ -59,7 +59,8 @@ namespace Robot.TesApp
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Robot started replaying instructions");
-            this._reader.Instructions = this._writer.Instructions;
+            // this._reader.Instructions = this._writer.Instructions;
+            
             this._api.Replay<AIRobot>(null);
             Console.WriteLine("Robot finished replaying instructions");
         }

@@ -31,13 +31,13 @@ namespace Robot.Models
         /// <summary>
         /// Gets or sets a function Type enum 
         /// </summary>
-        [JsonProperty("actionType")]
+        [JsonProperty("ActionType")]
         public RobotActionType ActionType { get; set; }
         
         /// <summary>
         /// Gets or sets function parameters
         /// </summary>
-        [JsonProperty("parameters")]
+        [JsonProperty("Parameters")]
         public T Parameters { get; set; }
     }
 }

@@ -27,7 +27,7 @@ namespace Robot.Models
         /// <summary>
         /// gets or sets the Angle
         /// </summary>
-        [JsonProperty("angle")]
+        [JsonProperty("Angle")]
         public float Angle { get; set; }
     }
 }
